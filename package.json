@@ -1,0 +1,32 @@
+{
+  "name": "au-contracts-v10",
+  "version": "1.0.0",
+  "description": "au-contracts version 10",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/au-crypto/au-contracts-v10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/au-crypto/au-contracts-v10/issues"
+  },
+  "homepage": "https://gitlab.com/au-crypto/au-contracts-v10#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.0.3",
+    "ganache": "^7.7.3",
+    "truffle": "^5.10.0",
+    "truffle-plugin-verify": "^0.6.1",
+    "web3": "^1.8.1"
+  }
+}
