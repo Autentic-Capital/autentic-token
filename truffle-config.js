@@ -37,10 +37,21 @@ module.exports = {
         bsc_testnet: {
             provider: () => new HDWalletProvider(PKEY, `https://data-seed-prebsc-1-s1.binance.org:8545`),
             network_id: 97,
-            confirmations: 0,    // # of confirmations to wait between deployments. (default: 0)
+            confirmations: 1,    // # of confirmations to wait between deployments. (default: 0)
             timeoutBlocks: 12000,  // # of blocks before a deployment times out  (minimum/default: 50)
-            networkCheckTimeout: 999999,
+            networkCheckTimeout: 2000000000,
             //gas: 5000000000,
+            //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+        },
+
+        bsc: {
+            provider: () => new HDWalletProvider(PKEY, `https://bsc-dataseed1.bnbchain.org`),
+            network_id: 56,
+            confirmations: 1,    // # of confirmations to wait between deployments. (default: 0)
+            timeoutBlocks: 12000,  // # of blocks before a deployment times out  (minimum/default: 50)
+            networkCheckTimeout: 2000000000,
+            gasPrice: 3000000000,
+            gas: 1400000,
             //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
         },
 

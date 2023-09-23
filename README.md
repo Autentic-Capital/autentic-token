@@ -13,23 +13,24 @@ In it there must be `PKEY`, `API_bsc` and `API_fuji`:
     API_bsc = ABCD1234...
     API_snowtrace = ABCDEF12345...
 
-### compile:
+### compile
 
 truffle compile AUt.sol
 
-### deploy to SoluChain:
+### deploy to SoluChain
 
 truffle migrate --reset --network subsolu
 
-### deploy to bsc_testnet:
+### deploy to bsc_testnet
 
 truffle migrate -f 1 --to 1 --network bsc_testnet
 
-### verify to Avalanche testnet (fuji):
+### verify to Avalanche testnet
 
 truffle run verify AUt --network fiji --license MIT
+truffle run verify AUt --network bsc_testnet --license MIT
 
-### tests (see for usage):
+### tests (see for usage)
 
 truffle exec ./scripts/AUt.js
 
