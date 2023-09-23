@@ -1,4 +1,4 @@
-# autentic capital
+# Autentic Capital
 
 ## AUt
 

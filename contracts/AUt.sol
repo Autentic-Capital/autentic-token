@@ -7,14 +7,13 @@ import "./access/Ownable2Step.sol";
 
 /**
  * Autentic Utility Token
+ * https://autentic.capital
  */
 contract AUt is ERC20, ERC20Burnable, Ownable2Step {
 
     constructor(string memory name_, string memory symbol_, uint256 amount)
     ERC20(name_, symbol_)
     Ownable(_msgSender()) {
-        // Дополнительные действия в конструкторе производного контракта
-
         _mint(_msgSender(), amount);
     }
 

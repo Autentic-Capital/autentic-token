@@ -37,15 +37,17 @@ module.exports = {
         bsc_testnet: {
             provider: () => new HDWalletProvider(PKEY, `https://data-seed-prebsc-1-s1.binance.org:8545`),
             network_id: 97,
-            confirmations: 5,    // # of confirmations to wait between deployments. (default: 0)
-            timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+            confirmations: 0,    // # of confirmations to wait between deployments. (default: 0)
+            timeoutBlocks: 12000,  // # of blocks before a deployment times out  (minimum/default: 50)
+            networkCheckTimeout: 999999,
+            //gas: 5000000000,
             //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
         },
 
         fuji: {
             provider: () => new HDWalletProvider(PKEY, `https://api.avax-test.network/ext/bc/C/rpc`),
             network_id: 43113,
-            confirmations: 5,    // # of confirmations to wait between deployments. (default: 0)
+            confirmations: 0,    // # of confirmations to wait between deployments. (default: 0)
             timeoutBlocks: 16000,  // # of blocks before a deployment times out  (minimum/default: 50)
             networkCheckTimeout: 999999,
             //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
