@@ -1,6 +1,6 @@
 # Autentic Capital
 
-## AUt
+## AUT
 
 Autentic Utility Token
 
@@ -15,7 +15,7 @@ In it there must be `PKEY`, `API_bsc` and `API_fuji`:
 
 ### compile
 
-truffle compile AUt.sol
+truffle compile AUT.sol
 
 ### deploy to SoluChain
 
@@ -27,12 +27,12 @@ truffle migrate -f 1 --to 1 --network bsc_testnet
 
 ### verify to Avalanche testnet
 
-truffle run verify AUt --network fiji --license MIT
-truffle run verify AUt --network bsc_testnet --license MIT
+truffle run verify AUT --network fiji --license MIT
+truffle run verify AUT --network bsc_testnet --license MIT
 
 ### tests (see for usage)
 
-truffle exec ./scripts/AUt.js
+truffle exec ./scripts/AUT.js
 
 ### reference
 

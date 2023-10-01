@@ -8,7 +8,7 @@ import "./extensions/ERC20Burnable.sol";
  * Autentic Utility Token
  * https://autentic.capital
  */
-contract AUt is ERC20, ERC20Burnable {
+contract AUT is ERC20, ERC20Burnable {
 
     constructor(string memory name_, string memory symbol_, uint256 amount)
     ERC20(name_, symbol_)
